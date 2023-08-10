@@ -1,0 +1,13 @@
+@mixin reseteo-pagina {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexbox ($direction, $wrap, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}

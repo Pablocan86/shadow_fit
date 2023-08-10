@@ -1,0 +1,51 @@
+@import "../modulos/mixin";
+
+.mainnosotros {
+    width: 100%;
+    background-color: black;
+    grid-area: main;
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.section1nosotros {
+    @include flexbox (row, wrap, space-evenly, center);
+    background-color: $color-gris-oscuro-paleta;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: $fuente-pagina;
+    font-size: 2rem;
+    
+    article {
+        width: 50%;
+
+        h2 {
+            color: $color-rojo-paleta;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1rem;
+            text-align: justify;
+
+            a {
+                color: $color-rojo-paleta;
+            }    
+            
+        }
+        
+    }
+
+    iframe {
+           margin-top:20px;
+           margin-bottom: 20px; 
+           border-radius: 10px;
+           box-shadow: -10px 20px 15px black;
+        }
+    }
+}

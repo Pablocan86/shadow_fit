@@ -1,0 +1,194 @@
+@import "../modulos/mixin";
+
+
+@media (max-width: 1300px) and (min-width: 860px){
+    .mainrutinas section article div {
+        width: 50%;
+        
+        
+        div {
+            width: 45%;
+            height:100%;
+            @include flexbox (column, nowrap, center, center);
+        
+            figure {
+                width: 100%;
+                height: 200px;
+
+
+                a figcaption p {
+                    margin-top: 120px;
+                }
+            }
+        
+        .parrafo {
+            padding-top: 5px;
+            height: 12vh;
+            }
+        }
+    }
+}  
+
+@media (max-width: 1199px) and (min-width: 660px){
+    .mainhome .sectionhome3 div .divsection3{
+        width: 100%;
+        margin: 0px 15px 0px 15px;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            height: 10vh;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) and (min-width: 576px){
+    header {
+        @include flexbox (column, wrap, center, center,);        
+    }
+}    
+@media (max-width: 786px) and (min-width: 320px){
+    .mainnosotros .section1nosotros {
+        @include flexbox (column, wrap, center, center);
+            article {
+                width: 100%;
+            h2 {
+                margin-top:10px;
+                text-align: center;
+            }
+            p {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .parrafonosotros {
+                text-align: center;
+
+            }
+
+        }    
+    }
+}
+
+@media (max-width: 660px) and (min-width: 480px) {
+    .mainrutinas section article div div {
+        width: 45%;
+        height: 100%;
+
+        p {
+            height: 12vh;
+        }
+        
+    }
+}
+@media (max-width: 600px) and (min-width: 320px){
+
+    .mainhome .sectionhome3 div {
+        flex-direction: column;
+        width: 100%;
+
+        .divsection3 {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+            text-align: justify;
+            margin-top: 10px;
+
+            img {
+                width:100%;
+            }
+        
+        }
+    }
+}
+
+
+@media (max-width: 510px) and (min-width: 320px) {
+    header {
+        flex-wrap: nowrap;
+    }
+    
+   .imglogo {
+       width: 200px;
+       height: 200px;
+       padding-left: 10px;
+       
+   }
+
+   .mainhome .sectionhome1 .div1inicio{
+        width: 270px;
+        height: 250px;
+        margin-top: 150px;
+        margin-left: 50px;
+        margin-bottom: 100px;
+
+        h2 {
+            color:white; 
+            font-weight: bold;
+            font-size: 1.6rem; 
+            word-spacing: 1px;  
+            letter-spacing: 0.5px;
+            margin-bottom: 30px; 
+        }    
+                
+        p {
+            font-size: 16px;
+            color:white;
+            margin-bottom: 30px;
+            }
+        }
+        
+    .mainservicios section div {
+        width: 100%;
+
+        p  {
+            margin-left: 10px;
+            margin-right: 10px;
+            }
+        }
+        
+        .maincontacto form {
+            
+            .form-control {
+                width: 375px;
+            }
+            
+            .btnsform {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;        
+            } 
+        }
+}
+
+@media (max-width: 400px) and (min-width: 320px) {
+        .mainnosotros .section1nosotros iframe {
+            width: 200px;
+            height: 300px;        
+        }
+        
+        .mainservicios section div {
+            width: 100%;
+        }
+
+        .maincontacto form {
+            
+            .form-control {
+                width: 300px;
+            }
+            
+            .btnsform {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;        
+            } 
+        }
+
+        .mainrutinas section article div div {
+            width: 250px;
+        }
+    }
+
