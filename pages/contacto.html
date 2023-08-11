@@ -48,23 +48,23 @@
     
   <main class="maincontacto">
     <!-- FORM BOOTSTRAP -->
-    <form action="">
+    <form id="form" action="">
       <div>
         <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-        <input class="form-control" type="text" placeholder="Escriba su nombre" aria-label="default input example" required>
+        <input required name="name"  class="form-control" type="text" placeholder="Escriba su nombre" aria-label="default input example" required>
       </div>
       <div>
         <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-        <input class="form-control" type="text" placeholder="+54-9-11-0000-0000" aria-label="default input example" >
+        <input  required name="phone" class="form-control" type="text" placeholder="+54-9-11-0000-0000" aria-label="default input example" >
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput2" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        <input required name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea3" class="form-label">Consulta</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su consulta"></textarea>
-      </div>
+        <textarea required name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su consulta"></textarea>
+      </div>  
       <section class="btnsform">
         <div ><input class="botoncontacto" type="button" value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <!-- MODAL BOOTSTRAP -->
