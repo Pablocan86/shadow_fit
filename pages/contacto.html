@@ -1,73 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LOGO SOLAPA -->
-    <link rel="shortcut icon" href="../assets/images/loguito.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/images/loguito.ico"
+      type="image/x-icon"
+    />
     <!-- INSTALACION BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="description" content="Contactanos para obtener el  mejor seguimiento en tus entrenamientos.">
-    <title> ** CONTACTO SHADOW FIT**</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta
+      name="description"
+      content="Contactanos para obtener el  mejor seguimiento en tus entrenamientos."
+    />
+    <title>** CONTACTO SHADOW FIT**</title>
+  </head>
+  <body>
     <header id="header">
-        <img src="../assets/images/logo_shadow_fit.webp" alt="logo de la empresa shadow fit" class="imglogo">
-        <h1>Shadow Fit Entrenamientos Personalizados</h1>  
-        <!-- NAV COMPONENTE BOOTSTRAP -->
-        <nav class="navbar navbar-expand-sm bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./rutinas.html">RUTINAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./contacto.html">CONTACTO</a>
-                </li>
-             </ul>
-            </div>
+      <img
+        src="../assets/images/logo_shadow_fit.webp"
+        alt="logo de la empresa shadow fit"
+        class="imglogo"
+      />
+      <h1>Shadow Fit Entrenamientos Personalizados</h1>
+      <!-- NAV COMPONENTE BOOTSTRAP -->
+      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./rutinas.html">RUTINAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
-    
-  <main class="maincontacto">
-    <!-- FORM BOOTSTRAP -->
-    <form action="https://formsubmit.co/shadowfit.info@gmail.com" method="POST">
-      <div>
-        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-        <input required name="name"  class="form-control" type="text" placeholder="Escriba su nombre" aria-label="default input example" required>
-      </div>
-      <div>
-        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-        <input  required name="phone" class="form-control" type="text" placeholder="+54-9-11-0000-0000" aria-label="default input example" >
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">Correo electrónico</label>
-        <input required name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea3" class="form-label">Consulta</label>
-        <textarea required name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su consulta"></textarea>
-      </div>  
-      <section class="btnsform">
-        <div ><input class="botoncontacto" type="button" value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <!-- MODAL BOOTSTRAP -->
+
+    <main class="maincontacto">
+      <!-- FORM BOOTSTRAP -->
+      <form
+        action="https://formsubmit.co/shadowfit.info@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="nombre">Nombre y apellido</label>
+        <input
+          required
+          autocomplete="none"
+          type="text"
+          id="nombre"
+          name="text"
+          required
+          placeholder="Escriba su nombre completo"
+        />
+        <label for="phone">Teléfono</label>
+        <input
+          type="number"
+          id="phone"
+          name="number"
+          placeholder="+54 9 11 4555 5555"
+          autocomplete="none"
+          required
+        />
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ejemplo@ejemplo.com"
+          required
+          autocomplete="none"
+        />
+        <label for="consulta">CONSULTA</label>
+        <textarea
+          type="text"
+          name="consulta"
+          id="consulta"
+          cols="30"
+          rows="8"
+          placeholder="Cuéntanos que necesitas"
+          autocomplete="none"
+          required
+        ></textarea>
+
+        <div class="btnsform">
+          <input class="botoncontacto" type="submit" value="ENVIAR" />
+          <input class="botoncontacto" type="reset" value="BORRAR" />
+        </div>
+
+        <!-- <section > -->
+
+        <!-- MODAL BOOTSTRAP
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -84,30 +143,62 @@
             </div>
           </div>
         </div>
-        </div>
-        <div><input class="botoncontacto" type="reset"  value="BORRAR"></div>
-      </section>
-    </form>
-    <!-- IFRAME DE GOOGLE MAPS -->
-    <iframe class="framecontacto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3285.0809586070063!2d-58.4627406!3d-34.576818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5df1d8eaaab%3A0x321aabc06716ee44!2sShadow%20Fit!5e0!3m2!1ses-419!2sar!4v1688855134099!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <a class="linkvolver" href="#header">Volver arriba</a>
-  </main>
-  <footer>
-    <p>shadowfit.info@gmail.com</p>
-    <div>
-        <a href="https://www.instagram.com/shadowfit_argentina/" target="_blank">
-            <img src="../assets/images/instagram-svgrepo-com.svg" alt="logo de instagram" class="imgfooter"></a>
+        </div> -->
+        <!-- <div> -->
+        <!-- </section> -->
+      </form>
+      <!-- IFRAME DE GOOGLE MAPS -->
+      <iframe
+        class="framecontacto"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3285.0809586070063!2d-58.4627406!3d-34.576818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5df1d8eaaab%3A0x321aabc06716ee44!2sShadow%20Fit!5e0!3m2!1ses-419!2sar!4v1688855134099!5m2!1ses-419!2sar"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+      <a class="linkvolver" href="#header">Volver arriba</a>
+    </main>
+    <footer>
+      <p>shadowfit.info@gmail.com</p>
+      <div>
+        <a
+          href="https://www.instagram.com/shadowfit_argentina/"
+          target="_blank"
+        >
+          <img
+            src="../assets/images/instagram-svgrepo-com.svg"
+            alt="logo de instagram"
+            class="imgfooter"
+        /></a>
         <a href="https://www.facebook.com/ShadowFitArgentina" target="_blank">
-            <img src="../assets/images/facebook-svgrepo-com.svg" alt="logo de facebook" class="imgfooter"></a>
-        <a href="https://api.whatsapp.com/send?phone=541154829958" target="_blank">
-            <img src="../assets/images/whatsapp-svgrepo-com.svg" alt="logo de whatsapp" class="imgfooter"></a>
+          <img
+            src="../assets/images/facebook-svgrepo-com.svg"
+            alt="logo de facebook"
+            class="imgfooter"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=541154829958"
+          target="_blank"
+        >
+          <img
+            src="../assets/images/whatsapp-svgrepo-com.svg"
+            alt="logo de whatsapp"
+            class="imgfooter"
+        /></a>
         <a href="https://www.youtube.com/@shadowfit5025" target="_blank">
-            <img src="../assets/images/youtube-svgrepo-com.svg" alt="logo de youtube" class="imgfooter"></a>
-    </div>
-    <p><b>PROYECTO FINAL CANTARIN PABLO 2023</b></p>
-  </footer>
-  <!-- SCRIPT-INSTALACION DE BOOTSTRAP -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+          <img
+            src="../assets/images/youtube-svgrepo-com.svg"
+            alt="logo de youtube"
+            class="imgfooter"
+        /></a>
+      </div>
+      <p><b>DESARROLLO WEB AUTORIA PROPIA</b></p>
+    </footer>
+    <!-- SCRIPT-INSTALACION DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
