@@ -1,0 +1,113 @@
+section {
+  background-color: black;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px gray;
+}
+
+.imagen_perfil {
+  margin-top: 10px;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px gray;
+}
+
+.logo_video {
+  width: 50px;
+  height: 50px;
+}
+section article {
+  width: 100%;
+  border-radius: 10px;
+}
+section article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 1px;
+}
+
+section article h3 {
+  background-color: white;
+  font-size: 1.8rem;
+  color: black;
+  margin: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ejercicio {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ejercicio p {
+  font-size: 1.5rem;
+  padding: 5px 10px 5px 10px;
+  padding-right: 0px;
+  margin-top: 5px;
+}
+
+.ejercicio p span {
+  padding: 5px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+section article div p {
+  font-size: 1rem;
+}
+
+.global_eje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 11, 26);
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+.footer_rutina {
+  position: relative;
+}
+
+.footer_rutina a {
+  text-decoration-line: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: black;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 20px rgb(20, 20, 20);
+}
+.wsp {
+  width: 65px;
+  height: 65px;
+  padding: 0px;
+  padding-left: 5px;
+  margin: 0px;
+  border: none;
+}

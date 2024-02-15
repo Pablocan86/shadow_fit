@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Quicksand-variables";
   src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
@@ -56,8 +57,9 @@ header h1 {
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: rgb(255, 254, 254);
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fffefe;
   font-style: italic;
   font-size: 1.5rem;
   text-shadow: 5px 10px 5px #d3d3d3;
@@ -69,12 +71,16 @@ header h1 {
   font-weight: 600;
 }
 
+.navbar-toggler-icon {
+  background-image: url("/assets/images/menu.svg");
+}
+
 .bg-body-tertiary {
   background-color: black !important;
 }
 
 .navbar-toggler {
-  background-color: rgb(255, 255, 255);
+  background-color: black;
 }
 
 main {
@@ -196,6 +202,232 @@ main {
 }
 .mainhome .sectionhome3 div .divsection3 a {
   color: #e5383b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_loguin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.body_loguin .header_loguin {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body_loguin .header_loguin .logo_shadow {
+  width: 220px;
+  height: 100px;
+}
+.body_loguin .header_loguin .h1_ingreso {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+.body_loguin .main_loguin {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.body_loguin .main_loguin .div_form {
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding: 40px;
+  border: 5px double #a4161a;
+  border-radius: 5px;
+}
+.body_loguin .main_loguin .div_form .icono_loguin {
+  width: 100px;
+  height: 100px;
+  background-color: #a4161a;
+  border-radius: 50%;
+  margin-top: 20px;
+  padding: 5px;
+}
+.body_loguin .main_loguin .div_form .input_text {
+  padding: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.body_loguin .main_loguin .div_form .input_text:focus {
+  outline: none;
+  box-shadow: 0px 0px 30px 10px #a4161a;
+}
+.body_loguin .main_loguin .div_form #boton_ingresar {
+  background-color: #a4161a;
+  width: 90%;
+  border: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  padding: 20px;
+}
+.body_loguin .main_loguin .div_form #boton_ingresar:hover {
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid rgb(120, 14, 14);
+  color: rgb(120, 14, 14);
+}
+.body_loguin .main_loguin .div_form a {
+  color: white;
+}
+.body_loguin .footer_loguin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 40px;
+}
+.body_loguin .icono_instagram {
+  width: 50px;
+  height: 50px;
+}
+
+.mainrutinas {
+  width: 100%;
+  grid-area: main;
+  background-color: black;
+  font-family: "Quicksand-variables";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainrutinas section {
+  width: 100%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainrutinas section h2 {
+  background-color: #161a1d;
+  width: 100%;
+  color: #e5383b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+.mainrutinas section article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.mainrutinas section article div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainrutinas section article div div {
+  background-color: #161a1d;
+  width: 300px;
+  height: 300px;
+  margin: 10px 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: -10px 20px 15px black;
+}
+.mainrutinas section article div div figure {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+.mainrutinas section article div div figure:hover figcaption {
+  display: block;
+}
+.mainrutinas section article div div figure:hover img {
+  transform: scale(1.3);
+}
+.mainrutinas section article div div figure img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: all 2s;
+}
+.mainrutinas section article div div figure a {
+  text-decoration: none;
+}
+.mainrutinas section article div div figure a figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.438);
+  font-size: 2.5rem;
+  text-align: center;
+  display: none;
+  transition: all 2s;
+}
+.mainrutinas section article div div figure a figcaption:hover {
+  font-size: 2rem;
+}
+.mainrutinas section article div div figure a figcaption p {
+  color: white;
+  font-weight: bold;
+  margin-top: 80px;
+}
+.mainrutinas section article div h4 {
+  width: 100%;
+  background-color: #e5383b;
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mainrutinas section article div .parrafo {
+  background-color: #161a1d;
+  color: white;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: start;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .mainnosotros {
@@ -812,6 +1044,239 @@ footer .imgfooter {
   .mainrutinas section article div div {
     width: 250px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_alumnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.body_alumnos .header_perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body_alumnos .header_perfil .nombre_alumno {
+  font-size: 1.5rem;
+  margin: 10px 0px 10px 0px;
+  color: white;
+}
+.body_alumnos .header_perfil .imagen_perfil {
+  margin-top: 20px;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px gray;
+}
+.body_alumnos .header_perfil #miSelect {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 70%;
+  background-color: black;
+  color: white;
+}
+.body_alumnos .header_perfil #miSelect option {
+  width: 70%;
+  text-align: center;
+}
+.body_alumnos .main_perfil {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 60px;
+  /* PANTALLA RUTINA */
+  /* PÁGINA PROGRESOS */
+  /* PANTALLA ALIMENTOS */
+}
+.body_alumnos .main_perfil .ocultar {
+  display: none;
+}
+.body_alumnos .main_perfil #div_rutina {
+  width: 100%;
+  margin: auto center;
+}
+.body_alumnos .main_perfil #div_rutina section article div p {
+  font-size: 0.8rem;
+}
+.body_alumnos .main_perfil #div_rutina section article .global_eje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 11, 26);
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 5px;
+}
+.body_alumnos .main_perfil #div_rutina section article .global_eje .ejercicio {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.body_alumnos .main_perfil #div_rutina section article .global_eje .ejercicio .logo_video {
+  width: 50px;
+  height: 50px;
+}
+.body_alumnos .main_perfil #div_rutina section article .global_eje .ejercicio p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+.body_alumnos .main_perfil #div_rutina section article .global_eje .ejercicio p span {
+  padding: 5px;
+  font-style: italic;
+  font-weight: 100;
+}
+.body_alumnos .main_perfil #div_progresos {
+  color: black;
+  width: 100%;
+}
+.body_alumnos .main_perfil #div_progresos h2 {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgb(88, 11, 26);
+  width: 100%;
+  margin-bottom: 10px;
+}
+.body_alumnos .main_perfil #div_progresos .section_progresos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  margin: 10px;
+  padding: 1px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px gray;
+}
+.body_alumnos .main_perfil #div_progresos .section_progresos .imgs_progresos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.body_alumnos .main_perfil #div_progresos .section_progresos .imgs_progresos img {
+  width: 90%;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+.body_alumnos .main_perfil #div_rutina section,
+.body_alumnos .main_perfil #div_alimentos section,
+.body_alumnos .main_perfil #div_progresos section {
+  background-color: black;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px gray;
+}
+.body_alumnos .main_perfil #div_rutina section article,
+.body_alumnos .main_perfil #div_alimentos section article,
+.body_alumnos .main_perfil #div_progresos section article {
+  width: 100%;
+  border-radius: 10px;
+}
+.body_alumnos .main_perfil #div_rutina section article h3,
+.body_alumnos .main_perfil #div_alimentos section article h3,
+.body_alumnos .main_perfil #div_progresos section article h3 {
+  background-color: white;
+  font-size: 1.8rem;
+  color: black;
+  margin: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.body_alumnos .main_perfil #div_alimentos {
+  width: 95%;
+}
+.body_alumnos .main_perfil #div_alimentos section div h2 {
+  color: white;
+  margin-bottom: 10px;
+  background-color: rgb(88, 11, 26);
+  width: 100%;
+}
+.body_alumnos .main_perfil #div_alimentos .h4_alimentos {
+  color: white;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.body_alumnos .main_perfil #div_alimentos .div_opciones img {
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.body_alumnos .main_perfil #div_alimentos .div_opciones p {
+  color: white;
+  text-align: justify;
+  margin: 5px;
+}
+.body_alumnos .main_perfil #div_alimentos h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+.body_alumnos .main_perfil a {
+  margin-bottom: 40px;
+}
+.body_alumnos .footer_perfil {
+  position: relative;
+}
+.body_alumnos .footer_perfil a {
+  text-decoration-line: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: black;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 20px rgb(20, 20, 20);
+}
+.body_alumnos .footer_perfil a .wsp {
+  width: 65px;
+  height: 65px;
+  padding: 0px;
+  padding-left: 5px;
+  margin: 0px;
+  border: none;
+}
+.body_alumnos .proceso_creacion {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

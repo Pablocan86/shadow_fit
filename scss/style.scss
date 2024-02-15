@@ -1,20 +1,17 @@
-@font-face {    
-    font-family: "Quicksand-variables";
-    src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
-  }
+@font-face {
+  font-family: "Quicksand-variables";
+  src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
 @import "../scss/modulos/variables";
 @import "../scss/modulos/mixin";
 @import "../scss/modulos/body-header";
 @import "../scss/modulos/inicio";
+@import "../scss/modulos/loguin";
+@import "../scss/modulos/rutinas";
 @import "../scss/modulos/nosotros";
 @import "../scss/modulos/servicios";
 @import "../scss/modulos/rutinas";
 @import "../scss/modulos/contacto";
 @import "../scss/modulos/footer";
 @import "../scss/modulos/medias";
-
-
-
-
-    
-
+@import "../scss/modulos/alumnos_rutinas";

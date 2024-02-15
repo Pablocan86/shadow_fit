@@ -55,6 +55,9 @@
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./loguin.html">ALUMNOS</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
@@ -74,27 +77,21 @@
 
     <main class="maincontacto">
       <!-- FORM BOOTSTRAP -->
-      <form
-        action="https://formsubmit.co/b75179ed5eb01352633a2112510ff62e"
-        method="post"
-      >
+      <form action="../contacto.php" method="post">
         <label for="nombre">Nombre y apellido</label>
         <input
           required
-          autocomplete="none"
           type="text"
           id="nombre"
-          name="text"
-          required
+          name="nombre"
           placeholder="Escriba su nombre completo"
         />
         <label for="phone">Teléfono</label>
         <input
           type="number"
           id="phone"
-          name="number"
+          name="phone"
           placeholder="+54 9 11 4555 5555"
-          autocomplete="none"
           required
         />
         <label for="email">Correo electrónico</label>
@@ -104,7 +101,6 @@
           name="email"
           placeholder="ejemplo@ejemplo.com"
           required
-          autocomplete="none"
         />
         <label for="consulta">CONSULTA</label>
         <textarea
@@ -114,7 +110,6 @@
           cols="30"
           rows="8"
           placeholder="Cuéntanos que necesitas"
-          autocomplete="none"
           required
         ></textarea>
 
@@ -125,7 +120,7 @@
 
         <!-- <section > -->
 
-        <!-- MODAL BOOTSTRAP
+        <!-- MODAL BOOSTRAP
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -142,9 +137,9 @@
             </div>
           </div>
         </div>
-        </div> -->
-        <!-- <div> -->
-        <!-- </section> -->
+        </div>
+        <div>
+        </section> -->
       </form>
       <!-- IFRAME DE GOOGLE MAPS -->
       <iframe

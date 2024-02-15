@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body_alumnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  .header_perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nombre_alumno {
+      font-size: 1.5rem;
+      margin: 10px 0px 10px 0px;
+      color: white;
+    }
+
+    .imagen_perfil {
+      margin-top: 20px;
+      width: 110px;
+      height: 110px;
+      border-radius: 100%;
+      box-shadow: 0px 0px 20px gray;
+    }
+    #miSelect {
+      border-radius: 5px;
+
+      font-size: 1.5rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 70%;
+      background-color: black;
+      color: white;
+
+      option {
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+  .main_perfil {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+    .ocultar {
+      display: none;
+    }
+
+    /* PANTALLA RUTINA */
+
+    #div_rutina {
+      width: 100%;
+      margin: auto center;
+      section article {
+        div p {
+          font-size: 0.8rem;
+        }
+        .global_eje {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(88, 11, 26);
+          border-radius: 5px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          margin-bottom: 5px;
+          .ejercicio {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo_video {
+              width: 50px;
+              height: 50px;
+            }
+
+            p {
+              font-size: 1.2rem;
+              text-align: left;
+
+              span {
+                padding: 5px;
+                font-style: italic;
+                font-weight: 100;
+              }
+            }
+          }
+        }
+      }
+    }
+    /* PÁGINA PROGRESOS */
+
+    #div_progresos {
+      color: black;
+      width: 100%;
+      h2 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: rgb(88, 11, 26);
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .section_progresos {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: none;
+        margin: 10px;
+        padding: 1px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 20px gray;
+        .imgs_progresos {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          img {
+            width: 90%;
+            border-radius: 5px;
+            margin: 10px 0px 10px 0px;
+          }
+        }
+      }
+    }
+    #div_rutina section,
+    #div_alimentos section,
+    #div_progresos section {
+      background-color: black;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border: none;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 0px 20px gray;
+    }
+    #div_rutina section article,
+    #div_alimentos section article,
+    #div_progresos section article {
+      width: 100%;
+      border-radius: 10px;
+    }
+    #div_rutina section article h3,
+    #div_alimentos section article h3,
+    #div_progresos section article h3 {
+      background-color: white;
+      font-size: 1.8rem;
+      color: black;
+      margin: 1px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    /* PANTALLA ALIMENTOS */
+    #div_alimentos {
+      width: 95%;
+
+      section div h2 {
+        color: white;
+        margin-bottom: 10px;
+        background-color: rgb(88, 11, 26);
+        width: 100%;
+      }
+      .h4_alimentos {
+        color: white;
+        text-align: justify;
+        margin-bottom: 10px;
+      }
+      .div_opciones {
+        img {
+          width: 90%;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+        p {
+          color: white;
+          text-align: justify;
+          margin: 5px;
+        }
+      }
+      h3 {
+        color: white;
+        margin-bottom: 5px;
+      }
+    }
+
+    a {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer_perfil {
+    position: relative;
+  }
+
+  .footer_perfil a {
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    background-color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(20, 20, 20);
+    .wsp {
+      width: 65px;
+      height: 65px;
+      padding: 0px;
+      padding-left: 5px;
+      margin: 0px;
+      border: none;
+    }
+  }
+  .proceso_creacion {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+  }
+}
