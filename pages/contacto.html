@@ -17,6 +17,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="../css/style.css" />
     <meta
       name="description"
@@ -77,7 +78,7 @@
 
     <main class="maincontacto">
       <!-- FORM BOOTSTRAP -->
-      <form action="../contacto.php" method="post">
+      <form method="post">
         <label for="nombre">Nombre y apellido</label>
         <input
           required
@@ -114,32 +115,14 @@
         ></textarea>
 
         <div class="btnsform">
-          <input class="botoncontacto" type="submit" value="ENVIAR" />
+          <input
+            onclick="enviarWhatsApp()"
+            class="botoncontacto"
+            type="submit"
+            value="ENVIAR"
+          />
           <input class="botoncontacto" type="reset" value="BORRAR" />
         </div>
-
-        <!-- <section > -->
-
-        <!-- MODAL BOOSTRAP
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">¡GRACIAS POR ESCRIBIRNOS!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                Ya recibimos tu consulta, en breves nos pondremos en contacto...
-              </div>
-              <div class="modal-footer" >
-                <button type="button" class="botoncontacto" data-bs-dismiss="modal">ACEPTAR</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div>
-        </section> -->
       </form>
       <!-- IFRAME DE GOOGLE MAPS -->
       <iframe
@@ -171,7 +154,7 @@
             class="imgfooter"
         /></a>
         <a
-          href="https://api.whatsapp.com/send?phone=541154829958"
+          href="https://wa.me/541154829958/?text=Hola!! Estuve viendo su página web y me interesa saber más..."
           target="_blank"
         >
           <img
@@ -179,7 +162,7 @@
             alt="logo de whatsapp"
             class="imgfooter"
         /></a>
-        <a href="https://www.youtube.com/@shadowfit5025" target="_blank">
+        <a href="https://www.youtube.com/@shadowfitargentina" target="_blank">
           <img
             src="../assets/images/youtube-svgrepo-com.svg"
             alt="logo de youtube"
@@ -194,5 +177,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>
